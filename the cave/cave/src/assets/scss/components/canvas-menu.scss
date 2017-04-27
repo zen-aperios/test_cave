@@ -31,6 +31,7 @@
 			width: calc(100% / 7);
 			height: 20vh;
 			padding-left: 10px;
+			border: 1px solid $dark-gray;
 		}
 @media screen and (max-width: 1190px) {
 	.grid-block {
