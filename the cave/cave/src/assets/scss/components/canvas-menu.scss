@@ -1,0 +1,113 @@
+.main-canvas {
+	padding: 0;
+	margin: 0 auto;
+
+}
+.off-canvas-wrapper {
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+
+.off-canvas-content {
+	background-color: pink;
+	width: 100vw;
+		@include breakpoint(large) {
+			height: 100vh;
+		}
+		@include breakpoint(medium) {
+			height: 100vh;			
+		}
+		@include breakpoint(small) {			
+			height: 100vh;	
+		}		
+		.hero-line-1 {
+			background-color: green;
+				opacity: 1;			
+				@include breakpoint(large) {
+					height: 20%;
+
+				}
+				@include breakpoint(medium) {
+					height: 20%;
+	
+				}
+				@include breakpoint(small) {			
+					height: 100%;
+
+				}			
+
+		}
+		.hero-line-2 {
+			background-color: yellow;
+				@include breakpoint(large) {
+					height: 20%;
+					opacity: 1;
+				}
+				@include breakpoint(medium) {
+					height: 20%;
+					opacity: 1;		
+				}
+				@include breakpoint(small) {			
+					height: 200px;	
+					opacity: 0;
+				}	
+		}
+		.hero-line-3 {
+			background-color: orange;
+				@include breakpoint(large) {
+					height: 20%;
+					opacity: 1;	
+				}
+				@include breakpoint(medium) {
+					height: 20%;
+					opacity: 1;			
+				}
+				@include breakpoint(small) {			
+					height: 200px;		
+					opacity: 0;	
+				}	
+		}
+		.hero-line-4 {
+			background-color: purple;
+				@include breakpoint(large) {
+					height: 20%;
+					opacity: 1;	
+				}
+				@include breakpoint(medium) {
+					height: 20%;	
+					opacity: 1;		
+				}
+				@include breakpoint(small) {			
+					height: 200px;	
+					opacity: 0;		
+				}	
+		}	
+		.hero-line-5 {
+			background-color: cyan;
+				@include breakpoint(large) {
+					height: 20%;
+					opacity: 1;	
+				}
+				@include breakpoint(medium) {
+					height: 20%;
+					opacity: 1;		
+				}
+				@include breakpoint(small) {			
+					height: 200px;	
+					opacity: 0;		
+				}	
+		}	
+		.r1, {
+	float: left;
+	overflow: hidden;
+	width: 14.2857142%; /* Fallback */
+	width: -webkit-calc(100% / 7);
+	width: calc(100% / 7);
+			border: 1px solid black;
+		} 
+		.r2, .r3, .r4, .r5 {
+			border: 1px solid black;
+		}									
+
+}
