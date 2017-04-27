@@ -7,105 +7,81 @@
 	margin: 0;
 	padding: 0;
 	height: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .off-canvas-content {
 	background-color: pink;
 	width: 100vw;
-		@include breakpoint(large) {
-			height: 100vh;
-		}
-		@include breakpoint(medium) {
-			height: 100vh;			
-		}
-		@include breakpoint(small) {			
-			height: 100vh;	
-		}		
-		.hero-line-1 {
-			background-color: green;
-				opacity: 1;			
-				@include breakpoint(large) {
-					height: 20%;
+	height: 100vh;	
+	position: relative;	
 
-				}
-				@include breakpoint(medium) {
-					height: 20%;
-	
-				}
-				@include breakpoint(small) {			
-					height: 100%;
-
-				}			
-
-		}
-		.hero-line-2 {
-			background-color: yellow;
-				@include breakpoint(large) {
-					height: 20%;
-					opacity: 1;
-				}
-				@include breakpoint(medium) {
-					height: 20%;
-					opacity: 1;		
-				}
-				@include breakpoint(small) {			
-					height: 200px;	
-					opacity: 0;
-				}	
-		}
-		.hero-line-3 {
-			background-color: orange;
-				@include breakpoint(large) {
-					height: 20%;
-					opacity: 1;	
-				}
-				@include breakpoint(medium) {
-					height: 20%;
-					opacity: 1;			
-				}
-				@include breakpoint(small) {			
-					height: 200px;		
-					opacity: 0;	
-				}	
-		}
-		.hero-line-4 {
-			background-color: purple;
-				@include breakpoint(large) {
-					height: 20%;
-					opacity: 1;	
-				}
-				@include breakpoint(medium) {
-					height: 20%;	
-					opacity: 1;		
-				}
-				@include breakpoint(small) {			
-					height: 200px;	
-					opacity: 0;		
-				}	
-		}	
-		.hero-line-5 {
-			background-color: cyan;
-				@include breakpoint(large) {
-					height: 20%;
-					opacity: 1;	
-				}
-				@include breakpoint(medium) {
-					height: 20%;
-					opacity: 1;		
-				}
-				@include breakpoint(small) {			
-					height: 200px;	
-					opacity: 0;		
-				}	
-		}	
-		.r1, {
-	float: left;
-	overflow: hidden;
-	width: 14.2857142%; /* Fallback */
-	width: -webkit-calc(100% / 7);
-	width: calc(100% / 7);
-			border: 1px solid black;
+		.handle-cave-sidebar, {
+			position: absolute;
+			top:0;
+			left: 0;
+			z-index: 100;
 		} 
+		.grid-block {
+			float: left;
+			overflow: hidden;
+			width: 14.2857142%; /* Fallback */
+			width: -webkit-calc(100% / 7);
+			width: calc(100% / 7);
+			height: 20vh;
+			padding-left: 10px;
+			border: 1px solid $dark-gray;
+			overflow-x: hidden;
+		}
+@media screen and (max-width: 1190px) {
+	.grid-block {
+		width: 14%; /* Fallback */
+		width: -webkit-calc(100% / 7);
+		width: calc(100% / 7);
+	}
+}
+
+@media screen and (max-width: 945px) {
+	.grid-block {
+		width: 25%; /* Fallback */
+		width: -webkit-calc(100% / 4);
+		width: calc(100% / 4);
+		height: 25vh;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.grid-block {
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+		height: 33vh;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.grid-block {
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid-block {
+		width: 50%; /* Fallback */
+		width: -webkit-calc(100% / 2);
+		width: calc(100% / 2);
+		height: 50vh;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.grid-block {
+		width: 100%;
+	}
+}		
 		.r2, .r3, .r4, .r5 {
 			border: 1px solid black;
 		}									
