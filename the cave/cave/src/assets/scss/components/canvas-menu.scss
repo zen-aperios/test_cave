@@ -25,7 +25,6 @@
 		} 
 		.grid-block {
 			float: left;
-			overflow: hidden;
 			width: 14.2857142%; /* Fallback */
 			width: -webkit-calc(100% / 7);
 			width: calc(100% / 7);
@@ -39,15 +38,15 @@
 						width: 14%; /* Fallback */
 						width: -webkit-calc(100% / 7);
 						width: calc(100% / 7);
-						height: 14vh;
+						height: 20vh;
 					}
 				}
-				@media screen and (max-width: 1050px) {
+				@media screen and (max-width: 1140px) {
 					.grid-block {
-						width: 16.666666%; /* Fallback */
+						width: 16.66666%; /* Fallback */
 						width: -webkit-calc(100% / 6);
 						width: calc(100% / 6);
-						height: 16vh;
+						height: 20vh;
 					}
 				}
 				@media screen and (max-width: 945px) {
@@ -58,12 +57,12 @@
 						height: 20vh;
 					}
 				}
-				@media screen and (max-width: 860px) {
+				@media screen and (max-width: 760px) {
 					.grid-block {
 						width: 25%; /* Fallback */
 						width: -webkit-calc(100% / 4);
 						width: calc(100% / 4);
-						height: 25vh;
+						height: 20vh;
 					}
 				}				
 
@@ -73,15 +72,6 @@
 						width: -webkit-calc(100% / 3);
 						width: calc(100% / 3);
 						height: 33vh;
-						overflow-x: hidden;
-					}
-				}
-
-				@media screen and (max-width: 660px) {
-					.grid-block {
-						width: 33.3333333%; /* Fallback */
-						width: -webkit-calc(100% / 3);
-						width: calc(100% / 3);
 						overflow-x: hidden;
 					}
 				}
