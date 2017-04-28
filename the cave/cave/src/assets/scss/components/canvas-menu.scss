@@ -12,6 +12,8 @@
 					position: absolute;
 					top:0;
 					left:0;
+					background-color: #1A1D2A;
+				}
 					/*@mixin offcanvas-base {
 						@include breakpoint(large) {
 							width: 335px;
@@ -33,6 +35,19 @@
 							width: 160px;		
 						}	
 							*/
+					.off-canvas.position-left {
+	    				width: 335px;
+	    			}
+					@media only screen and (max-width: 400px) {
+						  	.off-canvas.position-left {
+			    				width: 100%;
+			    			}
+							.position-left.is-open ~ .off-canvas-content {
+							  	transform: translateX(100%);						  	
+							}
+					}	  
+
+    				
 						.wrapper-sidebar {
 							border: 1px solid #232a3a;
 							width: 80%;
@@ -47,7 +62,7 @@
 								height: 320px;
 								border-bottom: 1px solid #232a3a;
 
-<<<<<<< HEAD
+
 							}
 							.projects-cave {
 								height: 160px;
@@ -62,7 +77,6 @@
 							.subcatg-cave {
 								height: 160px;
 								border-bottom: 1px solid #232a3a;
-=======
 					}
 					.filter-cave {
 						height: 320px;
@@ -77,10 +91,9 @@
 					.filter-cave {
 						height: 320px;
 						border-bottom: 1px solid #232a3a;
->>>>>>> parent of 0faba43... side bar updates
 
 							}															
-				}
+				
 	
 				.off-canvas-content {
 					background-color: pink;
