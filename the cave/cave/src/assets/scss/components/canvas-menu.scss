@@ -6,8 +6,37 @@
 			margin: 0;
 			padding: 0;
 			height: auto;  /* wrapper */
-			overflow-y: scroll;
 			overflow-x: hidden;
+
+				.cave-sidebar, {
+					position: absolute;
+					top:0;
+					left:0;
+					.logo-cave, {
+						height: 95px;
+						border-bottom: 1px solid #232a3a;
+					}
+					.filter-cave {
+						height: 320px;
+						border-bottom: 1px solid #232a3a;
+
+					}
+					.filter-cave {
+						height: 320px;
+						border-bottom: 1px solid #232a3a;
+
+					}
+					.filter-cave {
+						height: 320px;
+						border-bottom: 1px solid #232a3a;
+
+					}
+					.filter-cave {
+						height: 320px;
+						border-bottom: 1px solid #232a3a;
+
+					}															
+				}
 	
 				.off-canvas-content {
 					background-color: pink;
