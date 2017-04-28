@@ -66,38 +66,22 @@
 					}
 				}				
 
-<<<<<<< HEAD
-				@media screen and (max-width: 660px) {
-=======
 				@media screen and (max-width: 600px) {
->>>>>>> master
 					.grid-block {
 						width: 33.3333333%; /* Fallback */
 						width: -webkit-calc(100% / 3);
 						width: calc(100% / 3);
-<<<<<<< HEAD
-						height: 33vh;
-=======
 						height: 20vh;
->>>>>>> master
 						overflow-x: hidden;
 					}
 				}
 
-<<<<<<< HEAD
-				@media screen and (max-width: 400px) {
-=======
 				@media screen and (max-width: 440px) {
->>>>>>> master
 					.grid-block {
 						width: 50%; /* Fallback */
 						width: -webkit-calc(100% / 2);
 						width: calc(100% / 2);
-<<<<<<< HEAD
-						height: 50vh;
-=======
 						height: 33vh;
->>>>>>> master
 						overflow-x: hidden;
 					}
 				}
