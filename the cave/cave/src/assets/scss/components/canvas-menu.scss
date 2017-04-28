@@ -8,34 +8,61 @@
 			height: auto;  /* wrapper */
 			overflow-x: hidden;
 
-				.cave-sidebar, {
+				.cave-sidebar {
 					position: absolute;
 					top:0;
 					left:0;
-					.logo-cave, {
-						height: 95px;
-						border-bottom: 1px solid #232a3a;
-					}
-					.filter-cave {
-						height: 320px;
-						border-bottom: 1px solid #232a3a;
+					/*@mixin offcanvas-base {
+						@include breakpoint(large) {
+							width: 335px;
+						}
+						@include breakpoint(medium) {
+							width: 335px;		
+						}
+						@include breakpoint(small) {			
+							width: 160px;		
+						}	
+					}*/
+					/*	@include breakpoint(large) {
+							width: 335px;
+						}
+						@include breakpoint(medium) {
+							width: 335px;		
+						}
+						@include breakpoint(small) {			
+							width: 160px;		
+						}	
+							*/
+						.wrapper-sidebar {
+							border: 1px solid #232a3a;
+							width: 80%;
+							height: 100%;
+							margin: 0 auto;
+						}	
+							.logo-cave {
+								height: 95px;
+								border-bottom: 1px solid #232a3a;
+							}
+							.filter-cave {
+								height: 320px;
+								border-bottom: 1px solid #232a3a;
 
-					}
-					.projects-cave {
-						height: 160px;
-						border-bottom: 1px solid #232a3a;
+							}
+							.projects-cave {
+								height: 160px;
+								border-bottom: 1px solid #232a3a;
 
-					}
-					.content-type-cave {
-						height: 160px;
-						border-bottom: 1px solid #232a3a;
+							}
+							.content-type-cave {
+								height: 160px;
+								border-bottom: 1px solid #232a3a;
 
-					}
-					.subcatg-cave {
-						height: 160px;
-						border-bottom: 1px solid #232a3a;
+							}
+							.subcatg-cave {
+								height: 160px;
+								border-bottom: 1px solid #232a3a;
 
-					}															
+							}															
 				}
 	
 				.off-canvas-content {

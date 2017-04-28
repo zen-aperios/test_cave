@@ -440,7 +440,8 @@ $offcanvas-overlap-zindex: false;
 $offcanvas-reveal-zindex: 1;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
-$offcanvas-fixed-reveal: true;
+$offcanvas-fixed-reveal: false;
+$offcanvas-data-content-overlay: true;
 $offcanvas-exit-background: rgba($white, 0.25);
 $maincontent-class: 'off-canvas-content';
 
