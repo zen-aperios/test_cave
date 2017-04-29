@@ -94,7 +94,6 @@ function sass() {
 
 // Combine JavaScript into one file
 // In production, the file is minified
-
 function javascript() {
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
@@ -106,7 +105,6 @@ function javascript() {
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
-
 
 // Copy images to the "dist" folder
 // In production, the images are compressed
