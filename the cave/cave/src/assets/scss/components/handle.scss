@@ -1,0 +1,33 @@
+ /* handle setting */
+
+.handle-cave-sidebar, {
+	position: absolute; 
+	top: 105px;
+	left: 0;
+	z-index: 100;
+	width: auto;
+	height: 28px;
+	opacity: 0.5;
+	
+		.side-access {
+			background-color: $white;
+			width: 32px;
+			height: 28px;
+					
+				.arrow {
+					content:'';
+					display: inline-block;
+					position: absolute;
+					top: 7px;
+					left: 10px;
+					width: 12px;
+					height: 12px;
+					opacity: 0.5;
+					border-top: 2px solid $navy-dark;
+					border-right: 2px solid $navy-dark;
+					-moz-transform: rotate(-135deg);
+					-webkit-transform: rotate(-135deg);
+					transform: rotate(-135deg);
+				}			
+		}
+} 

@@ -1,0 +1,67 @@
+
+/* side bar content setting */
+
+.cave-sidebar {
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #1A1D2A;
+}
+	.off-canvas.position-left {
+	    width: 25%;
+	    min-width: 250px;
+	}
+		@media only screen and (max-width: 400px) {
+			.off-canvas.position-left {
+			    width: 85%;
+			    min-width: auto;
+			}
+				.position-left.is-open ~ .off-canvas-content {
+					transform: translateX(100%);						  	
+				}
+		}	  
+		
+			.wrapper-sidebar {
+				border: 1px solid #232a3a;
+				width: 80%;
+				height: 100%;
+				margin: 0 auto;
+			}	
+					.logo-cave, {
+						height: 95px;
+						border-bottom: 1px solid #232a3a;
+							.logo {
+								width: 120px;
+								height: 60px;
+								border: 1px solid #232a3a;
+							}
+					}
+					.filter-cave {
+						height: 320px;
+						border-bottom: 1px solid #232a3a;
+					}
+					.projects-cave {
+						height: 160px;
+						border-bottom: 1px solid #232a3a;
+					}
+					.content-type-cave {
+						height: 160px;
+						border-bottom: 1px solid #232a3a;
+					}
+					.subcatg-cave {
+						height: 160px;
+						border-bottom: 1px solid #232a3a;
+					}
+					.filter-cave {
+						height: 320px;
+						border-bottom: 1px solid #232a3a;
+					}
+					.filter-cave {
+						height: 320px;
+						border-bottom: 1px solid #232a3a;
+					}
+					.filter-cave {
+						height: 320px;
+						border-bottom: 1px solid #232a3a;
+					}
+			

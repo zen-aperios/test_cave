@@ -1,0 +1,24 @@
+.main-canvas {
+	padding: 0;  /* chief wrapper*/
+	margin: 0 auto;
+		
+		.off-canvas-wrapper {  
+			margin: 0;  /* off canvas wrapper */
+			padding: 0;
+			height: auto; 
+			overflow-x: hidden;
+ 												
+				.off-canvas-content { 
+					background-color: pink;  /* grid block container */
+					width: 100vw;
+					height: 100vh;	
+					position: relative;	
+
+												
+
+				}
+
+		}	
+
+}
+

@@ -50,4 +50,7 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import "./components/canvas-menu";
+@import "./components/main-canvas";
+@import "./components/handle";
+@import "./components/side-bar";
+@import "./components/grid-blocks";
