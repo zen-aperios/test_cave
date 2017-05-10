@@ -6,19 +6,20 @@
 	top:0;
 	left:0;
 	background-color: #1A1D2A;
+	min-width: 300px;
 }
 	.off-canvas.position-left {
 	    width: 335px;
-	    min-width: 335px;
-	    max-width: 335px;
 	}
 		@media only screen and (max-width: 400px) {
 			.off-canvas.position-left {
 			    width: 85%;
-			    min-width: auto;
+			    max-width: 335px;
+			    min-width: 300px;
 			}
 				.position-left.is-open ~ .off-canvas-content {
-					transform: translateX(100%);						  	
+					transform: translateX(85%);		
+					min-width: 300px;			  	
 				}
 		}	  
 		
