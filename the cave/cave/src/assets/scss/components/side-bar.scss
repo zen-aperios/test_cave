@@ -8,7 +8,7 @@
 	background-color: #1A1D2A;
 }
 	.off-canvas.position-left {
-	    width: 25%;
+	    width: 335px;
 	    min-width: 335px;
 	    max-width: 335px;
 	}
@@ -28,10 +28,10 @@
 				margin: 0 auto;
 				position: relative;
 					@include breakpoint(large) {
-						width: 79%;
+						width: 255px;
 					}
 					@include breakpoint(medium) {
-						width: 79%;
+						width: 78%;
 					}
 					@include breakpoint(small) {			
 						width: 76%;		
@@ -43,7 +43,7 @@
 						border-bottom: 1px solid #232a3a;
 							.logo {
 								width: 120px;
-								height: 60px;
+								height: 65px;
 								border: 1px solid #232a3a;
 							}
 					}
@@ -54,16 +54,18 @@
 								width: 100%; 
 								height: 280px;
 									.filter-title, {
-										height: 67px;
+										height: 65px;
 										width: 100%;
-										border: 1px solid #232a3a;
-										line-height: 5em;
-										font-size: 20px;
-										margin-bottom: 50px;
+										border: 1px solid pink;
+										line-height: 4.5em;
+										font-size: 23px;
+										font-weight: normal;
+										padding-left: 3px;
 									}
 									.filter-output {
-										height: 30px;
+										height: 45px;
 										width: 100%;
+										margin-top: 40px;
 										border: 1px solid #232a3a;
 									}	
 									.filter-stack {
@@ -72,6 +74,7 @@
 										line-height: 5em;
 										font-size: 20px;
 										border: 1px solid pink;
+										margin-left: 3px;
 											.f-block {
 												width: 32px;
 												height: 39px;
