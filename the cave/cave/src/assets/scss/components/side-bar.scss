@@ -55,6 +55,7 @@
 								width: 120px;
 								height: 65px;
 								border: 1px solid #232a3a;
+
 							}
 					}
 					.filter-cave {
@@ -104,6 +105,11 @@
 					.projects-cave {
 						height: 160px;
 						border-bottom: 1px solid #232a3a;
+						.button-side-access {
+							background-color: cyan;
+							width: 40px;
+							height: 40px;
+						}
 					}
 					.content-type-cave {
 						height: 160px;
