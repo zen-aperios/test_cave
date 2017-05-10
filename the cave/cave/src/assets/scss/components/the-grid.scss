@@ -11,12 +11,13 @@
  												
 				.off-canvas-content { 
 					  /* grid block container */
-					background: url("../img/bg.jpg");
+					background: url("../img/background/bg.jpg");
     				background-repeat: no-repeat;
-    				background-size: cover;
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;	 
+				 	background-size:100% 100%;
+				    -webkit-background-size: 100% 100%;
+				    -moz-background-size: 100% 100%;
+				    -o-background-size: 100% 100%; 
+				    background-position: top left;
 					width: 100vw;
 					height: 100%;	
 					position: relative;	

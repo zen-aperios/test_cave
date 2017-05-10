@@ -5,17 +5,16 @@
 	position: absolute;
 	top:0;
 	left:0;
-	background-color: #1A1D2A;
+	background-color: #181B28;
 	min-width: 300px;
 	overflow: visible;
 	height: 1754px;
-	opacity: 0.5;
-	background: url("../img/backgounds/sidebar-bg.jpg");
+	background: url("../img/background/sidebar-bg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;	
+ 	background-size:100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%; 
     background-position: top, left;	
 }
 	.off-canvas.position-left {
@@ -46,7 +45,6 @@
 					}
 					@include breakpoint(small) {			
 						width: 76%;		
-						border: 1px solid green;	
 					}				
 			}	
 					.logo-cave, {
@@ -55,8 +53,13 @@
 							.logo {
 								width: 120px;
 								height: 65px;
-								border: 1px solid #232a3a;
-
+								background: url("../img/icons/craft-logo.png");
+								background-position: 0px 24px;
+			   				 	background-size: 108px 35px;
+							    -webkit-background-size: 108px 35px;
+							    -moz-background-size: 108px 35px;
+							    -o-background-size: 108px 35px;
+							    background-repeat: no-repeat;
 							}
 					}
 					.filter-cave {
@@ -84,7 +87,6 @@
 										width: 220px;
 										line-height: 5em;
 										font-size: 20px;
-										border: 1px solid pink;
 										margin-left: 3px;
 											.f-block {
 												width: 32px;
