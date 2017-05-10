@@ -1,21 +1,20 @@
- /* handle setting */
-
-.handle-cave-sidebar, {
+.open-sidebar {
 	position: fixed; 
 	top: 105px;
 	left: 0;
-	z-index: 100;
+	z-index: 1000;
 	width: auto;
 	height: 28px;
 	opacity: 0.5;
+	background-color: pink;
 	
-		.side-access {
+		.side-access-2 {
 			background-color: $white;
 			width: 30px;
 			height: 28px;
 			padding: 0;
 					
-				.arrow {
+				.arrow-2 {
 					content:'';
 					display: inline-block;
 					position: absolute;
@@ -33,5 +32,4 @@
 					transform: rotate(-135deg);
 				}			
 		}
-} 
-
+}	

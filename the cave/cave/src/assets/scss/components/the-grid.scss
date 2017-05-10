@@ -10,9 +10,15 @@
 			overflow-x: hidden;
  												
 				.off-canvas-content { 
-					background-color: pink;  /* grid block container */
+					  /* grid block container */
+					background: url("../img/bg.jpg");
+    				background-repeat: no-repeat;
+    				background-size: cover;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;	 
 					width: 100vw;
-					height: 100vh;	
+					height: 100%;	
 					position: relative;	
 
 												

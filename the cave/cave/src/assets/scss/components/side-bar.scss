@@ -7,6 +7,15 @@
 	left:0;
 	background-color: #1A1D2A;
 	min-width: 300px;
+	overflow: visible;
+	height: 1754px;
+	background: url("../img/sidebar-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;	
+    background-position: top, left;	
 }
 	.off-canvas.position-left {
 	    width: 335px;
@@ -21,7 +30,7 @@
 					transform: translateX(85%);		
 					min-width: 300px;			  	
 				}
-		}	  
+		}	  	
 		
 			.wrapper-sidebar {
 				/*border: 1px solid #232a3a;*/
@@ -57,7 +66,6 @@
 									.filter-title, {
 										height: 65px;
 										width: 100%;
-										border: 1px solid pink;
 										line-height: 4.5em;
 										font-size: 23px;
 										font-weight: normal;
