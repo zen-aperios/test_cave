@@ -10,6 +10,7 @@
 	.off-canvas.position-left {
 	    width: 25%;
 	    min-width: 335px;
+	    max-width: 335px;
 	}
 		@media only screen and (max-width: 400px) {
 			.off-canvas.position-left {
@@ -66,17 +67,18 @@
 										border: 1px solid #232a3a;
 									}	
 									.filter-stack {
-										height: 131px;
-										width: 215px;
+										height: 132px;
+										width: 220px;
 										line-height: 5em;
 										font-size: 20px;
+										border: 1px solid pink;
 											.f-block {
-												width: 30px;
+												width: 32px;
 												height: 39px;
 												float: left;
 												margin: 2px;
 												border-radius: 2px;
-												border: 1.6px solid $navy-lighter;
+												border: 1px solid $navy-lighter;
 												background-color: $navy-normal;
 												/*border: 1px solid #232a3a;*/
 											}
