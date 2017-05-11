@@ -1,23 +1,24 @@
 .main-canvas {
 	padding: 0;  /* chief wrapper*/
 	margin: 0 auto;
-		
+	height: 100vh; 
+	width: 100vw;
+
 		.off-canvas-wrapper {  
 			margin: 0;  /* off canvas wrapper */
 			padding: 0;
-			height: auto; 
-			width: auto;
+			height: 1600px; 
+			width: 100vw;
 			overflow-x: hidden;
  												
 				.off-canvas-content { 
-					  /* grid block container */
-					background: url("../img/background/bg.jpg");
+					/* background: url("../img/background/bg.jpg"); /* grid block container */
+					background-color: $dark-gray;
     				background-repeat: no-repeat;
-				 	background-size:100% 100%;
-				    -webkit-background-size: 100% 100%;
-				    -moz-background-size: 100% 100%;
-				    -o-background-size: 100% 100%; 
-				    background-position: top left;
+				 	background-size: auto 800px;
+				    -webkit-background-size: auto 800px;
+				    -moz-background-size: auto 800px;
+				    -o-background-size: auto 800px; 
 					width: 100vw;
 					height: 100%;	
 					position: relative;	
