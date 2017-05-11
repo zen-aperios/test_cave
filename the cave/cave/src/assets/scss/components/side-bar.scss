@@ -26,7 +26,7 @@
 			    max-width: 335px;
 			    min-width: 300px;
 			}
-				.position-left.is-open ~ .off-canvas-content {
+				.position-left.is-open > .off-canvas-content {
 					transform: translateX(300px);		
 					min-width: 300px;			  	
 				}
@@ -62,49 +62,7 @@
 							    background-repeat: no-repeat;
 							}
 					}
-					.filter-cave {
-						height: 320px;
-						border-bottom: 1px solid #232a3a;
-							.filter-container {
-								width: 100%; 
-								height: 280px;
-									.filter-title, {
-										height: 65px;
-										width: 100%;
-										line-height: 4.5em;
-										font-size: 23px;
-										font-weight: normal;
-										padding-left: 3px;
-									}
-									.filter-output {
-										height: 45px;
-										width: 100%;
-										margin-top: 40px;
-										border: 1px solid #232a3a;
-									}	
-									.filter-stack {
-										height: 132px;
-										width: 220px;
-										line-height: 5em;
-										font-size: 20px;
-										margin-left: 3px;
-											.f-block {
-												width: 32px;
-												height: 39px;
-												float: left;
-												margin: 2px;
-												border-radius: 2px;
-												border: 1px solid $navy-lighter;
-												background-color: $navy-normal;
-												/*border: 1px solid #232a3a;*/
-											}
-																																																																																											
 
-									}																		
-
-
-							}
-					}
 					.projects-cave {
 						height: 160px;
 						border-bottom: 1px solid #232a3a;
@@ -114,8 +72,8 @@
 							height: 40px;
 						}
 					}
-					.content-type-cave {
-						height: 160px;
+					.year-cave {
+						height: 115px;
 						border-bottom: 1px solid #232a3a;
 					}
 					.subcatg-cave {

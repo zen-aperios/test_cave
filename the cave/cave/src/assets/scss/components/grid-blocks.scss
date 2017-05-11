@@ -1,6 +1,11 @@
 
 /* Grid block setting */
-
+.grid-clu {
+	height: 100%;
+	width: 100%;
+	z-index: 200;
+	position: absolute;
+}
 .grid-block {
 	float: left;
 	width: 14.2857142%; /* Fallback */

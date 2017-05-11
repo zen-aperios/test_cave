@@ -1,0 +1,74 @@
+.grid-introduction {
+	width: 340px;
+	height: 100px;
+ 	margin: auto;
+  	position: absolute;
+  	top: 250px; left: 0; right: 0;
+	z-index: 0;
+		@include breakpoint(large) {
+			width: 340px;
+			height: 100px;
+		}
+		@include breakpoint(medium) {
+			width: 340px;
+			height: 100px;
+		}
+		@include breakpoint(small) {			
+			width: 75%;
+			height: auto;
+		}		
+
+		.grid-title, {
+			height: 50px;
+			font-size: 	0.800em;
+			padding-top: 9px;
+			font-weight: bold;
+			font-stretch: condensed;
+			text-align: center;
+			font-style: oblique;
+				@include breakpoint(large) {
+					height: 50px;
+					padding-bottom: 0px;
+				}
+				@include breakpoint(medium) {
+					height: 50px;
+					padding-bottom: 0px;
+				}
+				@include breakpoint(small) {			
+					height: auto;
+					padding-bottom: 5px;
+				}			
+		}
+		.enter-grid {
+			height: 50px;
+			width: 170px;
+			margin: 0 auto;
+			padding: 0;
+				@include breakpoint(large) {
+				 	width: 170px;
+				}
+				@include breakpoint(medium) {
+				 	width: 170px;
+				}
+				@include breakpoint(small) {			
+				 	width: 100%;					
+				 }				
+
+					.start {
+					 	width: 170px;
+					 	height: 41px;
+					 	text-transform: uppercase;
+					 	font-weight: bold;
+					 	font-size: 0.500em;
+							@include breakpoint(large) {
+					 			width: 170px;
+							}
+							@include breakpoint(medium) {
+					 			width: 170px;
+							}
+							@include breakpoint(small) {			
+					 			width: 100%;					
+					 		}			 	
+					}
+		}		
+}

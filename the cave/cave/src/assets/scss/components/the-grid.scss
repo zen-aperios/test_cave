@@ -1,3 +1,9 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
 .main-canvas {
 	padding: 0;  /* chief wrapper*/
 	margin: 0 auto;
@@ -7,13 +13,13 @@
 		.off-canvas-wrapper {  
 			margin: 0;  /* off canvas wrapper */
 			padding: 0;
-			height: 1600px; 
+			height: auto; 
+			min-height: 1600px;
 			width: 100vw;
 			overflow-x: hidden;
  												
 				.off-canvas-content { 
 					/* background: url("../img/background/bg.jpg"); /* grid block container */
-					background-color: $dark-gray;
     				background-repeat: no-repeat;
 				 	background-size: auto 800px;
 				    -webkit-background-size: auto 800px;

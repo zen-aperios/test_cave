@@ -52,6 +52,9 @@
 @include motion-ui-animations;
 
 @import "./components/the-grid";
-@import "./components/handle";
-@import "./components/side-bar";
+@import "./components/grid-intro";
 @import "./components/grid-blocks";
+@import "./components/bar-handle";
+@import "./components/side-bar";
+@import "./components/filter-block";
+
