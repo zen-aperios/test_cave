@@ -60,6 +60,10 @@
 					 	text-transform: uppercase;
 					 	font-weight: bold;
 					 	font-size: 0.500em;
+					 	margin: 0 auto;
+					 	position: absolute;
+					 	left: 0;
+					 	right: 0;
 							@include breakpoint(large) {
 					 			width: 170px;
 							}
@@ -67,7 +71,8 @@
 					 			width: 170px;
 							}
 							@include breakpoint(small) {			
-					 			width: 100%;					
+					 			width: 100%;	
+					 			max-width: 170px;				
 					 		}			 	
 					}
 		}		

@@ -257,7 +257,7 @@ $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: 0.1875rem;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
@@ -613,23 +613,12 @@ $titlebar-icon-spacing: 0.25rem;
 $has-tip-font-weight: $global-weight-bold;
 $has-tip-border-bottom: false;
 $tooltip-background-color: $black;
-$tooltip-padding: rem-calc(0);
-$tooltip-bg: $black;
-$tooltip-font-size: rem-calc(14);
-$tooltip-font-weight: $global-weight-normal;
-$tooltip-font-color: $white;
-$tooltip-line-height: false;
-$tooltip-close-font-size: rem-calc(10);
-$tooltip-close-font-weight: $global-weight-normal;
-$tooltip-close-font-color: $white;
-$tooltip-font-size-sml: rem-calc(14);
+$tooltip-color: $white;
+$tooltip-padding: 0.3125rem;
+$tooltip-font-size: $small-font-size;
+$tooltip-pip-width: 0.375rem;
+$tooltip-pip-height: $tooltip-pip-width * 0.0625;
 $tooltip-radius: $global-radius;
-$tooltip-rounded: false;
-$tooltip-pip-size: 20px;
-$tooltip-height: 30px;
-$tooltip-class: 'tooltip';
-$tooltip-triangle-size: 2px; 
-$tooltip-max-width: 300px;
 
 // 37. Top Bar
 // -----------

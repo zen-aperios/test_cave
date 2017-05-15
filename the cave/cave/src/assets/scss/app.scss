@@ -3,7 +3,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-@import 'util/mixins';
+
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -57,5 +57,7 @@
 @import "./components/grid-blocks";
 @import "./components/bar-handle";
 @import "./components/side-bar";
+@import "./components/headings";
 @import "./components/filter-block";
-
+@import "./components/inputs";
+@import "./components/tooltip";

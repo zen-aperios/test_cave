@@ -15,10 +15,29 @@
 					padding-left: 3px;
 				}
 					.filter-output {
+						position: relative;
 						height: 45px;
 						width: 100%;
 						margin-top: 40px;
-						border: 1px solid #232a3a;
+
+							.crafts {
+								width: 50px;
+								height: 20px;
+							}
+							.real-output {
+								width: auto;
+								max-width: 32px;
+								height: 10px;
+								position: absolute;
+								top: 0;
+								right: 0;
+								
+								.filter-no {
+									-webkit-appearance: none;
+									padding: 0 0 0 0.5rem;
+									color: $white;
+								}
+							}
 					}	
 						.filter-stack {
 							height: 132px;
@@ -38,12 +57,9 @@
 									cursor: pointer;
 									/*border: 1px solid #232a3a;*/
 								}
-								.has-tip {
-									height: auto;
-									background-color: pink;
-								}
+
 								.f-block:hover {
-									border: 1px solid $navy-lighter;
+									border: 2px solid $navy-lighter;
 									/*border: 1px solid #232a3a;*/
 								}
 								.f-block:active {
