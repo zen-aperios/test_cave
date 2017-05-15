@@ -27,14 +27,15 @@
 							.real-output {
 								width: auto;
 								max-width: 32px;
-								height: 10px;
+								height: 9px;
 								position: absolute;
+								padding: 0.125rem 0 0 0;
 								top: 0;
 								right: 0;
 								
 								.filter-no {
 									-webkit-appearance: none;
-									padding: 0 0 0 0.5rem;
+									padding: 0 0 0.125rem 0.625rem;
 									color: $white;
 								}
 							}

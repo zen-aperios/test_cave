@@ -1,17 +1,17 @@
 input[type='number'] {
 	-moz-appearance:textfield;
-	font-weight: bold;
 	background-color: $black;
 	padding: 0;
 	color: $white;
 	height: 20px;
 	border-radius: 0.625rem;
 	border: 0;
+	font-weight: normal;
 		@include breakpoint(large) {
-			font-size: 0.6875rem;
+			font-size: 0.625rem;
 		}
 		@include breakpoint(medium) {
-			font-size: 0.6875rem;										
+			font-size: 0.625rem;										
 		}
 		@include breakpoint(small) {			
 			font-size: 0.75rem;									
