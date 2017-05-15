@@ -611,14 +611,25 @@ $titlebar-icon-spacing: 0.25rem;
 // -----------
 
 $has-tip-font-weight: $global-weight-bold;
-$has-tip-border-bottom: dotted 1px $dark-gray;
+$has-tip-border-bottom: false;
 $tooltip-background-color: $black;
-$tooltip-color: $white;
-$tooltip-padding: 0.75rem;
-$tooltip-font-size: $small-font-size;
-$tooltip-pip-width: 0.75rem;
-$tooltip-pip-height: $tooltip-pip-width * 0.866;
+$tooltip-padding: rem-calc(0);
+$tooltip-bg: $black;
+$tooltip-font-size: rem-calc(14);
+$tooltip-font-weight: $global-weight-normal;
+$tooltip-font-color: $white;
+$tooltip-line-height: false;
+$tooltip-close-font-size: rem-calc(10);
+$tooltip-close-font-weight: $global-weight-normal;
+$tooltip-close-font-color: $white;
+$tooltip-font-size-sml: rem-calc(14);
 $tooltip-radius: $global-radius;
+$tooltip-rounded: false;
+$tooltip-pip-size: 20px;
+$tooltip-height: 30px;
+$tooltip-class: 'tooltip';
+$tooltip-triangle-size: 2px; 
+$tooltip-max-width: 300px;
 
 // 37. Top Bar
 // -----------
