@@ -64,7 +64,11 @@
 									.block-image {
 										width: 20px;
 										height: 20px;
-										background-color: pink;
+
+										.filter-image {
+											width: 20px;
+											height: 20px;
+										}
 									}
 								}
 
