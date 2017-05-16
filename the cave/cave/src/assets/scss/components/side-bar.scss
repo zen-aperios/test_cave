@@ -30,7 +30,7 @@
 				}
 		}	  	
 		
-			.wrapper-sidebar {
+			.wrapper-sidebar-1{
 				/*border: 1px solid #232a3a;*/
 				height: 100%;
 				margin: 0 auto;
@@ -39,12 +39,27 @@
 						width: 255px;
 					}
 					@include breakpoint(medium) {
-						width: 78%;
+						width: 255px;
 					}
 					@include breakpoint(small) {			
 						width: 76%;		
 					}				
-			}	
+			}
+			.wrapper-sidebar-2 {
+				/*border: 1px solid #232a3a;*/
+				height: 100%;
+				margin: 0;
+				position: relative;
+					@include breakpoint(large) {
+						width: 255px;
+					}
+					@include breakpoint(medium) {
+						width: 255px;
+					}
+					@include breakpoint(small) {			
+						width: 228px;		
+					}				
+			}					
 					.logo-cave, {
 						height: 95px;
 						border-bottom: 1px solid #232a3a;
@@ -63,46 +78,59 @@
 
 					.projects-cave {
 						height: 160px;
+						width: 88%; /* Fallback */
+						float: right;
+						margin: 0;
+						padding: 0;
 						border-bottom: 1px solid #232a3a;
 							.projects {
-								width: 50px;
-								height: 20px;
+								width: auto;
+								height: auto;
 								padding: 35px 0 0 0;
+								border: 1px solid green;
 							}
 					}
 					.year-cave {
 						height: 115px;
+						width: 88%; /* Fallback */
+						float: right;
 						border-bottom: 1px solid #232a3a;
 							.years {
-								width: 50px;
-								height: 20px;
+								width: auto;
+								height: auto;
 								padding: 20px 0 0 0;
 							}						
 					}
 					.style-cave {
 						height: 160px;
+						width: 88%; /* Fallback */
+						float: right;
 						border-bottom: 1px solid #232a3a;
 							.styles {
-								width: 50px;
-								height: 20px;
+								width: auto;
+								height: auto;
 								padding: 35px 0 0 0;
 							}							
 					}
 					.sequence-cave {
 						height: 160px;
+						width: 88%; /* Fallback */
+						float: right;
 						border-bottom: 1px solid #232a3a;
 							.sequences {
-								width: 70px;
-								height: 20px;
+								width: auto;
+								height: auto;
 								padding: 35px 0 0 0;
 							}							
 					}
 					.size-cave {
 						height: 160px;
+						width: 88%; /* Fallback */
+						float: right;
 						border-bottom: 1px solid #232a3a;
 							.sizes {
-								width: 50px;
-								height: 20px;
+								width: auto;
+								height: auto;
 								padding: 35px 0 0 0;
 							}							
 					}
