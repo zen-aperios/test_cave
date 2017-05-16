@@ -22,11 +22,9 @@
 	}
 		@media only screen and (max-width: 400px) {
 			.off-canvas.position-left {
-			    width: 85%;
-			    max-width: 335px;
-			    min-width: 300px;
+			    width: 300px;
 			}
-				.position-left.is-open > .off-canvas-content {
+				.position-left.is-open + .off-canvas-content {
 					transform: translateX(300px);		
 					min-width: 300px;			  	
 				}
