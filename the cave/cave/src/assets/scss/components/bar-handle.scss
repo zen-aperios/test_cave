@@ -2,12 +2,16 @@
 
 .handle-cave-sidebar, {
 	position: fixed; 
-	top: 165px;
+	top: 105px;
 	left: 0;
 	z-index: 1000;
 	width: auto;
 	height: 28px;
 	opacity: 0.5;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
 
 		.side-access {
 			background-color: $white;

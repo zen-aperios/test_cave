@@ -4,6 +4,9 @@ input[type='number'] {
 	padding: 0;
 	color: $white;
 	height: 20px;
+	-webkit-border-radius: 0.625rem;
+	-moz-border-radius: 0.625rem;
+	-o-border-radius: 0.625rem;
 	border-radius: 0.625rem;
 	border: 0;
 	font-weight: normal;
