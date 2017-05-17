@@ -9,6 +9,7 @@
 	min-width: 300px;
 	overflow: visible;
 	height: 100%;
+	min-height: 2200px;
 	background: url("../img/background/sidebar-bg.jpg");
     background-repeat: no-repeat;
  	background-size:100% 100%;
@@ -83,11 +84,19 @@
 						margin: 0;
 						padding: 0;
 						border-bottom: 1px solid #232a3a;
+						-webkit-transition: height 0.2s linear;
+	                    -moz-transition: height 0.2s linear;
+	                    transition: height 0.2s linear;	
+	                    -o-transition: height 0.2s linear;	
+                        -ms-transition: height 0.2s linear;	
 							.projects {
 								width: auto;
 								height: auto;
 								padding: 35px 0 0 0;
 							}
+					}
+					.projects-expand {
+						height: 340px;
 					}
 					.year-cave {
 						height: 115px;
@@ -105,31 +114,55 @@
 						width: 88%; /* Fallback */
 						float: right;
 						border-bottom: 1px solid #232a3a;
+						-webkit-transition: height 0.2s linear;
+	                    -moz-transition: height 0.2s linear;
+	                    transition: height 0.2s linear;	
+	                    -o-transition: height 0.2s linear;	
+                        -ms-transition: height 0.2s linear;							
 							.styles {
 								width: auto;
 								height: auto;
 								padding: 35px 0 0 0;
 							}							
 					}
+					.style-expand {
+						height: 340px;
+					}					
 					.sequence-cave {
 						height: 160px;
 						width: 88%; /* Fallback */
 						float: right;
 						border-bottom: 1px solid #232a3a;
+						-webkit-transition: height 0.2s linear;
+	                    -moz-transition: height 0.2s linear;
+	                    transition: height 0.2s linear;	
+	                    -o-transition: height 0.2s linear;	
+                        -ms-transition: height 0.2s linear;							
 							.sequences {
 								width: auto;
 								height: auto;
 								padding: 35px 0 0 0;
 							}							
 					}
+					.sequence-expand {
+						height: 340px;
+					}					
 					.size-cave {
 						height: 160px;
 						width: 88%; /* Fallback */
 						float: right;
 						border-bottom: 1px solid #232a3a;
+						-webkit-transition: height 0.2s linear;
+	                    -moz-transition: height 0.2s linear;
+	                    transition: height 0.2s linear;	
+	                    -o-transition: height 0.2s linear;	
+                        -ms-transition: height 0.2s linear;							
 							.sizes {
 								width: auto;
 								height: auto;
 								padding: 35px 0 0 0;
 							}							
 					}
+					.size-expand {
+						height: 340px;
+					}					
