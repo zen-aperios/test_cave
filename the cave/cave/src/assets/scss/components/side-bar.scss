@@ -7,15 +7,14 @@
 	left:0;
 	background-color: #181B28;
 	min-width: 300px;
-	overflow: visible;
+	overflow: hidden;
 	height: 100%;
-	min-height: 2200px;
 	background: url("../img/background/sidebar-bg.jpg");
     background-repeat: no-repeat;
- 	background-size:100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%; 
+ 	background-size:100% 1700px;
+    -webkit-background-size: 100% 1700px;
+    -moz-background-size: 100% 1700px;
+    -o-background-size: 100% 1700px; 
     background-position: top, left;	
 }
 	.off-canvas.position-left {

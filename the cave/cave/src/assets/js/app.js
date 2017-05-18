@@ -29,14 +29,17 @@ $('#project-filter').click(function (a) {
     $(".projects-cave").toggleClass("projects-expand");
     $("#project-output").toggleClass("output-expand");
 
-   	$(".style-cave").removeClass("style-expand");
+    $(".content-type-cave").removeClass("content-type-expand");
+    $("#type-output").removeClass("output-expand");    
+
+    $(".dynamic-cave").removeClass("dynamic-expand");
+    $("#dynamic-output").removeClass("output-expand");    
+
+   	/* $(".style-cave").removeClass("style-expand");
     $("#style-output").removeClass("output-expand");    
 
-    $(".sequence-cave").removeClass("sequence-expand");
-    $("#sequence-output").removeClass("output-expand");
-
     $(".size-cave").removeClass("size-expand");
-    $("#size-output").removeClass("output-expand");
+    $("#size-output").removeClass("output-expand"); */
 
  });
  $('#type-filter').click(function (b) {  
@@ -44,17 +47,20 @@ $('#project-filter').click(function (a) {
     $(".content-type-cave").toggleClass("content-type-expand");
     $("#type-output").toggleClass("output-expand");
 
-    $(".dynamic-cave").removeClass("dynamic-cave-expand");
+    $(".dynamic-cave").removeClass("dynamic-expand");
     $("#dynamic-output").removeClass("output-expand");
 
     $(".projects-cave").removeClass("projects-expand");
     $("#project-output").removeClass("output-expand");
 
-    $(".sequence-cave").removeClass("sequence-expand");
-    $("#sequence-output").removeClass("output-expand");
 
-    $(".size-cave").removeClass("size-expand");
-    $("#size-output").removeClass("output-expand");
+  /*  $(".size-cave").removeClass("size-expand");
+    $("#size-output").removeClass("output-expand");    
+
+    $(".sequence-cave").removeClass("sequence-expand");
+    $("#sequence-output").removeClass("output-expand"); */
+
+
 
 
  }); 
@@ -63,21 +69,26 @@ $('#project-filter').click(function (a) {
     $(".dynamic-cave").toggleClass("dynamic-expand");
     $("#dynamic-output").toggleClass("output-expand");
 
+    $(".projects-cave").removeClass("projects-expand");
+    $("#project-output").removeClass("output-expand");    
+
     $(".content-type-cave").removeClass("content-type-expand");
     $("#type-output").removeClass("output-expand");    
 
-    $(".projects-cave").removeClass("projects-expand");
-    $("#project-output").removeClass("output-expand");
 
-    $(".sequence-cave").removeClass("sequence-expand");
+
+  /*  $(".sequence-cave").removeClass("sequence-expand");
     $("#sequence-output").removeClass("output-expand");
 
     $(".size-cave").removeClass("size-expand");
-    $("#size-output").removeClass("output-expand");
+    $("#size-output").removeClass("output-expand");  */
 
 
  }); 
- $('#style-filter').click(function (d) {  
+
+ 
+
+ /* $('#style-filter').click(function (d) {  
 
 
     $(".style-cave").toggleClass("style-expand");
@@ -127,4 +138,4 @@ $('#project-filter').click(function (a) {
     $("#project-output").removeClass("output-expand");    
        
 
- });      
+ });   */    
