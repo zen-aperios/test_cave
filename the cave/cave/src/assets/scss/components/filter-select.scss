@@ -13,11 +13,12 @@
 	-o-border-radius: 3px;
 	border-radius: 3px;
 	text-transform: uppercase;
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
-    -moz-user-select: -moz-none;
-    -o-user-select: none;
-    user-select: none;	
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 	.filter-select:hover {
 		border: 1px solid $navy-lighter;
@@ -33,11 +34,12 @@
 	transition: height 0.2s linear;	
 	-o-transition: height 0.2s linear;	
     -ms-transition: height 0.2s linear;	
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
-    -moz-user-select: -moz-none;
-    -o-user-select: none;
-    user-select: none;    	
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 	
     overflow-y: scroll;
     overflow-x: hidden;
  	-moz-box-shadow: 0px 3px 8px rgba($black, 0.3), inset 0 -10px 20px -5px #332A37;
