@@ -35,9 +35,59 @@
 								
 								.filter-no {
 									-webkit-appearance: none;
+									-webkit-border-radius: 0.625rem;
+									-moz-border-radius: 0.625rem;
+									-o-border-radius: 0.625rem;
+									border-radius: 0.625rem;
 									padding: 0 0 0.125rem 0.625rem;
 									color: $white;
+									box-shadow: none;
+									-webkit-box-shadow: none;
+									-moz-box-shadow: none;
+									-o-box-shadow: none;
+
 								}
+										input[type='number'] {
+										-moz-appearance:textfield;
+										background-color: $black;
+										color: $white;
+										height: 20px;
+										-webkit-border-radius: 0.625rem;
+										-moz-border-radius: 0.625rem;
+										-o-border-radius: 0.625rem;
+										border-radius: 0.625rem;
+										border: 0;
+										font-weight: normal;
+											@include breakpoint(large) {
+												font-size: 0.625rem;
+											}
+											@include breakpoint(medium) {
+												font-size: 0.625rem;										
+											}
+											@include breakpoint(small) {			
+												font-size: 0.75rem;									
+											}	
+									}
+														 
+										input[type='number']::-webkit-outer-spin-button,
+										input[type='number']::-webkit-inner-spin-button {
+											-webkit-appearance: none;
+										}	
+										input[type='number']::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+											color: $white;
+										}
+										input[type='number']::-moz-placeholder { /* Firefox 19+ */
+											color: $white;
+										}
+										input[type='number']:-ms-input-placeholder { /* IE 10+ */
+											color: $white;
+										}
+										input[type='number']:-moz-placeholder { /* Firefox 18- */
+											color: $white;
+										}		
+										input[type='number']::placeholder {
+											color: $white;
+										}								
 							}
 					}	
 						.filter-stack {
@@ -76,7 +126,7 @@
 
 								.f-block:hover {
 									border: 1px solid $navy-lighter;
-									padding: 0.53125rem 0 0 0.34375rem;
+									padding: 0.5rem 0 0 0.34375rem;
 									/*border: 1px solid #232a3a;*/
 								}
 								.f-block:active {
