@@ -98,18 +98,7 @@
 					.projects-expand {
 						height: 340px;
 					}
-					.year-cave {
-						height: 115px;
-						width: 88%; /* Fallback */
-						float: right;
-						border-bottom: 1px solid #232a3a;
-							.years {
-								width: auto;
-								height: auto;
-								padding: 20px 0 0 0;
-							}						
-					}
-					.style-cave {
+					.content-type-cave {
 						height: 160px;
 						width: 88%; /* Fallback */
 						float: right;
@@ -119,13 +108,33 @@
 	                    transition: height 0.2s linear;	
 	                    -o-transition: height 0.2s linear;	
                         -ms-transition: height 0.2s linear;							
-							.styles {
+							.type {
 								width: auto;
 								height: auto;
 								padding: 35px 0 0 0;
 							}							
 					}
-					.style-expand {
+					.content-type-expand {
+						height: 340px;
+					}					
+
+					.dynamic-cave {
+						height: 160px;
+						width: 88%; /* Fallback */
+						float: right;
+						border-bottom: 1px solid #232a3a;
+						-webkit-transition: height 0.2s linear;
+	                    -moz-transition: height 0.2s linear;
+	                    transition: height 0.2s linear;	
+	                    -o-transition: height 0.2s linear;	
+                        -ms-transition: height 0.2s linear;							
+							.dynamic {
+								width: auto;
+								height: auto;
+								padding: 35px 0 0 0;
+							}							
+					}
+					.dynamic-expand {
 						height: 340px;
 					}					
 					.sequence-cave {
@@ -165,4 +174,35 @@
 					}
 					.size-expand {
 						height: 340px;
-					}					
+					}		
+
+				/*	.year-cave {
+						height: 115px;
+						width: 88%; /* Fallback 
+						float: right;
+						border-bottom: 1px solid #232a3a;
+							.years {
+								width: auto;
+								height: auto;
+								padding: 20px 0 0 0;
+							}						
+					}   */	
+				/*	.style-cave {
+						height: 160px;
+						width: 88%; /* Fallback
+						float: right;
+						border-bottom: 1px solid #232a3a;
+						-webkit-transition: height 0.2s linear;
+	                    -moz-transition: height 0.2s linear;
+	                    transition: height 0.2s linear;	
+	                    -o-transition: height 0.2s linear;	
+                        -ms-transition: height 0.2s linear;							
+							.styles {
+								width: auto;
+								height: auto;
+								padding: 35px 0 0 0;
+							}							
+					}
+					.style-expand {
+						height: 340px;
+					}	 */											

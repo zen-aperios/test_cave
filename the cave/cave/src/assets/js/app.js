@@ -39,7 +39,45 @@ $('#project-filter').click(function (a) {
     $("#size-output").removeClass("output-expand");
 
  });
- $('#style-filter').click(function (b) {  
+ $('#type-filter').click(function (b) {  
+
+    $(".content-type-cave").toggleClass("content-type-expand");
+    $("#type-output").toggleClass("output-expand");
+
+    $(".dynamic-cave").removeClass("dynamic-cave-expand");
+    $("#dynamic-output").removeClass("output-expand");
+
+    $(".projects-cave").removeClass("projects-expand");
+    $("#project-output").removeClass("output-expand");
+
+    $(".sequence-cave").removeClass("sequence-expand");
+    $("#sequence-output").removeClass("output-expand");
+
+    $(".size-cave").removeClass("size-expand");
+    $("#size-output").removeClass("output-expand");
+
+
+ }); 
+ $('#dynamic-filter').click(function (c) {  
+
+    $(".dynamic-cave").toggleClass("dynamic-expand");
+    $("#dynamic-output").toggleClass("output-expand");
+
+    $(".content-type-cave").removeClass("content-type-expand");
+    $("#type-output").removeClass("output-expand");    
+
+    $(".projects-cave").removeClass("projects-expand");
+    $("#project-output").removeClass("output-expand");
+
+    $(".sequence-cave").removeClass("sequence-expand");
+    $("#sequence-output").removeClass("output-expand");
+
+    $(".size-cave").removeClass("size-expand");
+    $("#size-output").removeClass("output-expand");
+
+
+ }); 
+ $('#style-filter').click(function (d) {  
 
 
     $(".style-cave").toggleClass("style-expand");
@@ -56,7 +94,7 @@ $('#project-filter').click(function (a) {
 
 
  });   
- $('#sequence-filter').click(function (c) {  
+ $('#sequence-filter').click(function (e) {  
 
 
     $(".sequence-cave").toggleClass("sequence-expand");
@@ -73,7 +111,7 @@ $('#project-filter').click(function (a) {
 
 
  });   
- $('#size-filter').click(function (d) {  
+ $('#size-filter').click(function (f) {  
 
 
     $(".size-cave").toggleClass("size-expand");
