@@ -60,19 +60,40 @@
 			width: 220px;
 			height: auto;
 				.list-item {
-					padding: 2px 0 2px 0;
 					position: relative;
 					width: auto;
+						@include breakpoint(large) {			
+							padding: 2px 0 2px 0;
+						}						
+						@include breakpoint(medium) {			
+							padding: 2px 0 2px 0;
+						}						
+						@include breakpoint(small) {			
+							padding: 4px 0 4px 0;
+						}					
 
 						input[type="checkbox"] { 
 							position: absolute; 
-							color: $white !important;
-							-webkit-text-fill-color: $white;
 							opacity: 0; 
 							z-index: -1; 
 						}
+							input[type=checkbox]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
-							label span {/* <-- style the artificial checkbox */
+							}
+							input[type=checkbox]::-moz-placeholder { /* Firefox 19+ */
+
+							}
+							input[type=checkbox]:-ms-input-placeholder { /* IE 10+ */
+
+							}
+							input[type=checkbox]:-moz-placeholder { /* Firefox 18- */
+
+							}		
+							input[type=checkbox]::placeholder {
+
+							}							
+
+							.tick {/* <-- style the artificial checkbox */
 							  height: 15px;
 							  width: 15px;
 							  border: 1px solid $navy-lighter;
@@ -80,44 +101,25 @@
 							  position: relative;
 							  z-index: 9;
 							  margin: 5px 10px 0 0;
-							  color: $white !important;
-							  -webkit-text-fill-color: $white;
 							}
 
-							[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
-							  	content: '\2714';
+							[type=checkbox]:checked + .tick:before {/* <-- style its checked state..with a ticked icon */
+								color:white;
+								content: "✔\fe0e";
 							  	position: absolute;
-								color: $white !important;
-							    -webkit-text-fill-color: $white;
 							  	left: 0;
 							  	top: 2px;
 							  	z-index: 10;
 							  	font-size: 24px;						  
 							}	
-							input[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
-							  	content: '\2714';
+							input[type=checkbox]:checked + .tick:before {/* <-- style its checked state..with a ticked icon */
+								color:white;
+								content: "✔\fe0e";
 							  	position: absolute;
-								color: $white !important;
-							    -webkit-text-fill-color: $white;
 							  	left: 0;
 							  	top: 2px;
 							  	z-index: 10;
 							  	font-size: 24px;						  
-							}
-							input[type=checkbox]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-								color: $white !important;
-							}
-							input[type=checkbox]::-moz-placeholder { /* Firefox 19+ */
-								color: $white !important;
-							}
-							input[type=checkbox]:-ms-input-placeholder { /* IE 10+ */
-								color: $white !important;
-							}
-							input[type=checkbox]:-moz-placeholder { /* Firefox 18- */
-								color: $white !important;
-							}		
-							input[type=checkbox]::placeholder {
-								color: $white !important;
 							}							
 							.list-label {
 								font-size: 12px;
@@ -142,19 +144,40 @@
 			width: 220px;
 			height: auto;
 				.list-item {
-					padding: 2px 0 2px 0;
 					position: relative;
 					width: auto;
+					@include breakpoint(large) {			
+						padding: 2px 0 2px 0;
+					}						
+					@include breakpoint(medium) {			
+						padding: 2px 0 2px 0;
+					}						
+					@include breakpoint(small) {			
+						padding: 4px 0 4px 0;
+					}					
 
 						input[type="checkbox"] { 
 							position: absolute; 
-							color: $white !important;
-							-webkit-text-fill-color: $white;
 							opacity: 0; 
 							z-index: -1; 
 						}
+							input[type=checkbox]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
-							label span {/* <-- style the artificial checkbox */
+							}
+							input[type=checkbox]::-moz-placeholder { /* Firefox 19+ */
+
+							}
+							input[type=checkbox]:-ms-input-placeholder { /* IE 10+ */
+
+							}
+							input[type=checkbox]:-moz-placeholder { /* Firefox 18- */
+
+							}		
+							input[type=checkbox]::placeholder {
+
+							}							
+
+							.tick {/* <-- style the artificial checkbox */
 							  height: 15px;
 							  width: 15px;
 							  border: 1px solid $navy-lighter;
@@ -162,45 +185,26 @@
 							  position: relative;
 							  z-index: 9;
 							  margin: 5px 10px 0 0;
-							  color: $white !important;
-							  -webkit-text-fill-color: $white;
 							}
 
-							[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
-							  	content: '\2714';
+							[type=checkbox]:checked + .tick:before {/* <-- style its checked state..with a ticked icon */
+								color:white;
+								content: "✔\fe0e";
 							  	position: absolute;
-								color: $white !important;
-							    -webkit-text-fill-color: $white;
 							  	left: 0;
 							  	top: 2px;
 							  	z-index: 10;
 							  	font-size: 24px;						  
 							}	
-							input[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
-							  	content: '\2714';
+							input[type=checkbox]:checked + .tick:before {/* <-- style its checked state..with a ticked icon */
+								color:white;
+								content: "✔\fe0e";
 							  	position: absolute;
-								color: $white !important;
-							    -webkit-text-fill-color: $white;
 							  	left: 0;
 							  	top: 2px;
 							  	z-index: 10;
 							  	font-size: 24px;						  
 							}
-							input[type=checkbox]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-								color: $white !important;
-							}
-							input[type=checkbox]::-moz-placeholder { /* Firefox 19+ */
-								color: $white !important;
-							}
-							input[type=checkbox]:-ms-input-placeholder { /* IE 10+ */
-								color: $white !important;
-							}
-							input[type=checkbox]:-moz-placeholder { /* Firefox 18- */
-								color: $white !important;
-							}		
-							input[type=checkbox]::placeholder {
-								color: $white !important;
-							}	
 							.list-label {
 								font-size: 12px;
 								letter-spacing: 0.094em;
@@ -227,77 +231,57 @@
 				padding-bottom: 2px;
 				border-bottom: 1px solid #232a3a;
 				padding-left: 25px;
+
 						input[type="checkbox"] { 
 							position: absolute; 
 							opacity: 0; 
 							z-index: -1; 
 						}
-
-							label span {/* <-- style the artificial checkbox */
-							  height: 15px;
-							  width: 15px;
-							  border: 1px solid $navy-lighter;
-							  display: inline-block;
-							  position: relative;
-							  z-index: 9;
-							  margin: 5px 10px 0 0;
-							}
-
-						input[type="checkbox"] { 
-							position: absolute; 
-							color: $white !important;
-							-webkit-text-fill-color: $white;
-							opacity: 0; 
-							z-index: -1; 
-						}
-
-							label span {/* <-- style the artificial checkbox */
-							  height: 15px;
-							  width: 15px;
-							  border: 1px solid $navy-lighter;
-							  display: inline-block;
-							  position: relative;
-							  z-index: 9;
-							  margin: 5px 10px 0 0;
-							  color: $white !important;
-							  -webkit-text-fill-color: $white;
-							}
-
-							[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
-							  	content: '\2714';
-							  	position: absolute;
-								color: $white !important;
-							    -webkit-text-fill-color: $white;
-							  	left: 0;
-							  	top: 2px;
-							  	z-index: 10;
-							  	font-size: 24px;						  
-							}	
-							input[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
-							  	content: '\2714';
-							  	position: absolute;
-								color: $white !important;
-							    -webkit-text-fill-color: $white;
-							  	left: 0;
-							  	top: 2px;
-							  	z-index: 10;
-							  	font-size: 24px;						  
-							}
 							input[type=checkbox]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-								color: $white !important;
+
 							}
 							input[type=checkbox]::-moz-placeholder { /* Firefox 19+ */
-								color: $white !important;
+
 							}
 							input[type=checkbox]:-ms-input-placeholder { /* IE 10+ */
-								color: $white !important;
+
 							}
 							input[type=checkbox]:-moz-placeholder { /* Firefox 18- */
-								color: $white !important;
+
 							}		
 							input[type=checkbox]::placeholder {
-								color: $white !important;
+
+							}							
+
+							.tick {/* <-- style the artificial checkbox */
+							  height: 15px;
+							  width: 15px;
+							  border: 1px solid $navy-lighter;
+							  display: inline-block;
+							  position: relative;
+							  z-index: 9;
+							  margin: 5px 10px 0 0;
+							}
+
+							[type=checkbox]:checked + .tick:before {/* <-- style its checked state..with a ticked icon */
+								color:white;
+								content: "✔\fe0e";
+							  	position: absolute;
+							  	left: 0;
+							  	top: 2px;
+							  	z-index: 10;
+							  	font-size: 24px;						  
 							}	
+							input[type=checkbox]:checked + .tick:before {/* <-- style its checked state..with a ticked icon */
+								color:white;
+								content: "✔\fe0e";
+							  	position: absolute;
+							  	left: 0;
+							  	top: 2px;
+							  	z-index: 10;
+							  	font-size: 24px;						  
+							}
+
 							.list-label {
 								font-size: 12px;
 								letter-spacing: 0.094em;
