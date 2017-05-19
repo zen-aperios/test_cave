@@ -66,6 +66,8 @@
 
 						input[type="checkbox"] { 
 							position: absolute; 
+							color: $white !important;
+							-webkit-text-fill-color: $white;
 							opacity: 0; 
 							z-index: -1; 
 						}
@@ -81,13 +83,14 @@
 							}
 
 							[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
-							  content: '\2714';
-							  position: absolute;
-							  color: $white;
-							  left: 0;
-							  top: 2px;
-							  z-index: 10;
-							  font-size: 24px;						  
+							  	content: '\2714';
+							  	position: absolute;
+								color: $white !important;
+							    -webkit-text-fill-color: $white;
+							  	left: 0;
+							  	top: 2px;
+							  	z-index: 10;
+							  	font-size: 24px;						  
 							}	
 
 							.list-label {
