@@ -60,17 +60,9 @@
 			width: 220px;
 			height: auto;
 				.list-item {
+					padding: 2px 0 2px 0;
 					position: relative;
 					width: auto;
-						@include breakpoint(large) {			
-							padding: 2px 0 2px 0;
-						}						
-						@include breakpoint(medium) {			
-							padding: 2px 0 2px 0;
-						}						
-						@include breakpoint(small) {			
-							padding: 4px 0 4px 0;
-						}					
 
 						input[type="checkbox"] { 
 							position: absolute; 
@@ -144,17 +136,9 @@
 			width: 220px;
 			height: auto;
 				.list-item {
+					padding: 2px 0 2px 0;
 					position: relative;
 					width: auto;
-					@include breakpoint(large) {			
-						padding: 2px 0 2px 0;
-					}						
-					@include breakpoint(medium) {			
-						padding: 2px 0 2px 0;
-					}						
-					@include breakpoint(small) {			
-						padding: 4px 0 4px 0;
-					}					
 
 						input[type="checkbox"] { 
 							position: absolute; 
@@ -231,7 +215,6 @@
 				padding-bottom: 2px;
 				border-bottom: 1px solid #232a3a;
 				padding-left: 25px;
-
 						input[type="checkbox"] { 
 							position: absolute; 
 							opacity: 0; 
