@@ -80,6 +80,8 @@
 							  position: relative;
 							  z-index: 9;
 							  margin: 5px 10px 0 0;
+							  color: $white !important;
+							  -webkit-text-fill-color: $white;
 							}
 
 							[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
@@ -92,7 +94,31 @@
 							  	z-index: 10;
 							  	font-size: 24px;						  
 							}	
-
+							input[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
+							  	content: '\2714';
+							  	position: absolute;
+								color: $white !important;
+							    -webkit-text-fill-color: $white;
+							  	left: 0;
+							  	top: 2px;
+							  	z-index: 10;
+							  	font-size: 24px;						  
+							}
+							input[type=checkbox]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+								color: $white !important;
+							}
+							input[type=checkbox]::-moz-placeholder { /* Firefox 19+ */
+								color: $white !important;
+							}
+							input[type=checkbox]:-ms-input-placeholder { /* IE 10+ */
+								color: $white !important;
+							}
+							input[type=checkbox]:-moz-placeholder { /* Firefox 18- */
+								color: $white !important;
+							}		
+							input[type=checkbox]::placeholder {
+								color: $white !important;
+							}							
 							.list-label {
 								font-size: 12px;
 								letter-spacing: 0.094em;
@@ -122,6 +148,8 @@
 
 						input[type="checkbox"] { 
 							position: absolute; 
+							color: $white !important;
+							-webkit-text-fill-color: $white;
 							opacity: 0; 
 							z-index: -1; 
 						}
@@ -134,18 +162,45 @@
 							  position: relative;
 							  z-index: 9;
 							  margin: 5px 10px 0 0;
+							  color: $white !important;
+							  -webkit-text-fill-color: $white;
 							}
 
 							[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
-							  content: '\2714';
-							  position: absolute;
-							  color: $white;
-							  left: 0;
-							  top: 2px;
-							  z-index: 10;
-							  font-size: 24px;						  
+							  	content: '\2714';
+							  	position: absolute;
+								color: $white !important;
+							    -webkit-text-fill-color: $white;
+							  	left: 0;
+							  	top: 2px;
+							  	z-index: 10;
+							  	font-size: 24px;						  
 							}	
-
+							input[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
+							  	content: '\2714';
+							  	position: absolute;
+								color: $white !important;
+							    -webkit-text-fill-color: $white;
+							  	left: 0;
+							  	top: 2px;
+							  	z-index: 10;
+							  	font-size: 24px;						  
+							}
+							input[type=checkbox]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+								color: $white !important;
+							}
+							input[type=checkbox]::-moz-placeholder { /* Firefox 19+ */
+								color: $white !important;
+							}
+							input[type=checkbox]:-ms-input-placeholder { /* IE 10+ */
+								color: $white !important;
+							}
+							input[type=checkbox]:-moz-placeholder { /* Firefox 18- */
+								color: $white !important;
+							}		
+							input[type=checkbox]::placeholder {
+								color: $white !important;
+							}	
 							.list-label {
 								font-size: 12px;
 								letter-spacing: 0.094em;
@@ -188,16 +243,61 @@
 							  margin: 5px 10px 0 0;
 							}
 
-							[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
-							  content: '\2714';
-							  position: absolute;
-							  color: $white;
-							  left: 0;
-							  top: 2px;
-							  z-index: 10;
-							  font-size: 24px;						  
-							}	
+						input[type="checkbox"] { 
+							position: absolute; 
+							color: $white !important;
+							-webkit-text-fill-color: $white;
+							opacity: 0; 
+							z-index: -1; 
+						}
 
+							label span {/* <-- style the artificial checkbox */
+							  height: 15px;
+							  width: 15px;
+							  border: 1px solid $navy-lighter;
+							  display: inline-block;
+							  position: relative;
+							  z-index: 9;
+							  margin: 5px 10px 0 0;
+							  color: $white !important;
+							  -webkit-text-fill-color: $white;
+							}
+
+							[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
+							  	content: '\2714';
+							  	position: absolute;
+								color: $white !important;
+							    -webkit-text-fill-color: $white;
+							  	left: 0;
+							  	top: 2px;
+							  	z-index: 10;
+							  	font-size: 24px;						  
+							}	
+							input[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
+							  	content: '\2714';
+							  	position: absolute;
+								color: $white !important;
+							    -webkit-text-fill-color: $white;
+							  	left: 0;
+							  	top: 2px;
+							  	z-index: 10;
+							  	font-size: 24px;						  
+							}
+							input[type=checkbox]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+								color: $white !important;
+							}
+							input[type=checkbox]::-moz-placeholder { /* Firefox 19+ */
+								color: $white !important;
+							}
+							input[type=checkbox]:-ms-input-placeholder { /* IE 10+ */
+								color: $white !important;
+							}
+							input[type=checkbox]:-moz-placeholder { /* Firefox 18- */
+								color: $white !important;
+							}		
+							input[type=checkbox]::placeholder {
+								color: $white !important;
+							}	
 							.list-label {
 								font-size: 12px;
 								letter-spacing: 0.094em;
