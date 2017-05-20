@@ -26,10 +26,11 @@
 							}
 							.real-output {
 								width: auto;
+								height: auto;								
 								max-width: 32px;
-								height: 9px;
+								max-height: 32px;
 								position: absolute;
-								padding: 0.125rem 0 0 0;
+								padding: 0.10rem 0 0 0;
 								top: 0;
 								right: 0;
 								
@@ -48,16 +49,18 @@
 
 								}
 										input[type='number'] {
-										-moz-appearance:textfield;
-										background-color: $black;
-										color: $white;
-										height: 20px;
-										-webkit-border-radius: 0.625rem;
-										-moz-border-radius: 0.625rem;
-										-o-border-radius: 0.625rem;
-										border-radius: 0.625rem;
-										border: 0;
-										font-weight: normal;
+											-moz-appearance: textfield;
+											background-color: $black;
+											color: $white;
+											height: 20px;
+											text-align: center;
+											padding: 0;
+											-webkit-border-radius: 0.625rem;
+											-moz-border-radius: 0.625rem;
+											-o-border-radius: 0.625rem;
+											border-radius: 0.625rem;
+											border: 0;
+											font-weight: normal;
 											@include breakpoint(large) {
 												font-size: 0.625rem;
 											}
@@ -65,7 +68,7 @@
 												font-size: 0.625rem;										
 											}
 											@include breakpoint(small) {			
-												font-size: 0.75rem;									
+												font-size: 0.625rem;								
 											}	
 									}
 														 
