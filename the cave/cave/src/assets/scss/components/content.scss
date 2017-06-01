@@ -1,0 +1,16 @@
+.content-wrapper {
+	position: fixed;
+	width: 90%;
+	height: 90vh;
+	background-color: $black;
+	border: 1px solid $pink;
+	margin: 0 auto;
+	z-index: 1000;
+	@include absolute-center;
+		.image-container {
+			width: 90%;
+			height: 100%;
+			margin: 0 auto;
+			background-color: pink;
+		}
+}
