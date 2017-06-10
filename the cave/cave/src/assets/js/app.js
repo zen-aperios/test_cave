@@ -18,10 +18,20 @@ $(document).foundation();
 	  $("#cave-grid").html(output); 
 	}); */
 
+// --------- content close section ------------
+
+$('.content-wrapper').click(function (content) {  
+
+    $(".content-wrapper").toggleClass("content-toggle");
+
+ });
+
+
+// --------- end content section ------------
 
 
 
-// --------- Part - 3 ------------
+// --------- filter section ------------
 
 $('#project-filter').click(function (a) {  
 

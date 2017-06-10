@@ -1,16 +1,38 @@
 .content-wrapper {
-	position: fixed;
-	width: 90%;
-	height: 90vh;
-	background-color: $black;
-	border: 1px solid $pink;
-	margin: 0 auto;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	background: rgba($black, 0.8);
 	z-index: 1000;
-	@include absolute-center;
+	opacity: 1;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;	
+    -ms-transition: opacity 0.4s ease;		
+
 		.image-container {
-			width: 90%;
-			height: 100%;
+			width: auto;
+			max-width: 100%;
 			margin: 0 auto;
-			background-color: pink;
+			background-color: pink;			
+			display: inline-block;	
+
+				.image-setting {
+					width: inherit;
+					height: inherit;
+					max-width: 100%;
+					@include clearfix;
+					@include horizontal-center;
+				}
 		}
+}
+.content-toggle {
+	opacity: 0;	
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;	
+    -ms-transition: opacity 0.4s ease;			
 }
