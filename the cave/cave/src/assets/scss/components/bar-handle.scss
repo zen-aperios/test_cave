@@ -4,14 +4,14 @@
 	position: fixed; 
 	top: 105px;
 	left: 0;
-	z-index: 1000;
+	z-index: 800;
 	width: auto;
 	height: 28px;
-	opacity: 0.5;
+	//opacity: 0.5;
 
 
 		.side-access {
-			background-color: $white;
+			background-color: #FF0059;
 			width: 30px;
 			height: 28px;
 			padding: 0;
@@ -26,9 +26,11 @@
 					height: 10px;
 					margin: 0;
 					padding: 0;
-					opacity: 0.5;
-					border-top: 2px solid $navy-dark;
-					border-right: 2px solid $navy-dark;
+					// opacity: 0.5;
+					border-top: 2px solid $white;
+					border-right: 2px solid $white;					
+					// border-top: 2px solid $navy-dark;
+					// border-right: 2px solid $navy-dark;
 					-moz-transform: rotate(-135deg);
 					-webkit-transform: rotate(-135deg);
 					transform: rotate(-135deg);

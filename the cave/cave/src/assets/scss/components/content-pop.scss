@@ -1,0 +1,43 @@
+.content-wrapper {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	background: rgba($black, 0.8);
+	z-index: 1000;
+	opacity: 0;
+	display: none;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;	
+    -ms-transition: opacity 0.4s ease;		
+
+		.image-container {
+			width: auto;
+			max-width: 100%;
+			margin: 0 auto;
+			background-color: pink;			
+			display: inline-block;	
+			-webkit-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.64);
+			-moz-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.64);
+			box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.64);			
+
+				.image-setting {
+					width: inherit;
+					height: inherit;
+					max-width: 100%;
+					@include clearfix;
+					@include horizontal-center;
+				}
+		}
+}
+.content-toggle {
+	opacity: 0;	
+	display: block;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;	
+    -ms-transition: opacity 0.4s ease;			
+}

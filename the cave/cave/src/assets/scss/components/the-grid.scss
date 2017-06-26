@@ -7,7 +7,8 @@ body {
 .main-canvas {
 	padding: 0;  /* chief wrapper*/
 	margin: 0 auto;
-	height: 100vh; 
+	min-height: 100vh; 
+	height: auto;
 	width: 100vw;
 
 		.off-canvas-wrapper {  

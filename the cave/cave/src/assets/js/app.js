@@ -22,10 +22,15 @@ $(document).foundation();
 
 $('.content-wrapper').click(function (content) {  
 
-    $(".content-wrapper").toggleClass("content-toggle");
+    $(".content-wrapper").addClass("content-toggle");
 
  });
+/*$('.projection-wrapper').click(function (projection) {  
 
+    $(".projection-wrapper").toggleClass("projection-toggle");
+
+ });
+*/
 
 // --------- end content section ------------
 
@@ -95,7 +100,20 @@ $('#project-filter').click(function (a) {
 
 
  }); 
+ $('#top-type-filter').click(function (d) {  
 
+    //$(".top-type-cave").toggleClass("top-type-expand");
+    $("#top-type-output").toggleClass("top-type-expand");
+ 
+
+  /*  $(".sequence-cave").removeClass("sequence-expand");
+    $("#sequence-output").removeClass("output-expand");
+
+    $(".size-cave").removeClass("size-expand");
+    $("#size-output").removeClass("output-expand");  */
+
+
+ }); 
  
 
  /* $('#style-filter').click(function (d) {  
