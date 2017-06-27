@@ -24,6 +24,7 @@ $('.content-wrapper').click(function (content) {
 
     $(".content-wrapper").addClass("content-toggle");
 
+
  });
 /*$('.projection-wrapper').click(function (projection) {  
 
@@ -103,7 +104,7 @@ $('#project-filter').click(function (a) {
  $('#top-type-filter').click(function (d) {  
 
     //$(".top-type-cave").toggleClass("top-type-expand");
-    $("#top-type-output").toggleClass("top-type-expand");
+    $(".select-top-bar-output").toggleClass("top-type-output-expand");
  
 
   /*  $(".sequence-cave").removeClass("sequence-expand");

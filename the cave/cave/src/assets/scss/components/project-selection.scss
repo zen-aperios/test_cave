@@ -12,28 +12,38 @@
 	transition: opacity 0.4s ease;
 	-o-transition: opacity 0.4s ease;	
     -ms-transition: opacity 0.4s ease;	
+				@include breakpoint(small only) {
+					padding-top: 10px;
+				}     
 
 
 		.projection-container {
 			position: relative;
 			width: 86%;
+			min-width: flex;
 			height: 700px;
+			overflow: hidden;
 			margin: 0 auto;
 			background: url("../img/background/popup-bg-full.jpg");
     		background-repeat: no-repeat;
     		background-size: cover;
-    		background-color: green;
     		background-position: bottom;
 			-webkit-box-shadow: 0px 0px 20px 5px rgba(13,19,31,1);
 			-moz-box-shadow: 0px 0px 20px 5px rgba(13,19,31,1);
-			box-shadow: 0px 0px 20px 5px rgba(13,19,31,1);
+			box-shadow: 0px 0px 20px 5px rgba(13,19,31,1);		
+				@include breakpoint(small only) {
+					height: auto;
+				}  			
     			.project-top-bar {
-    				position: relative;
     				@include clearfix;
-    				height: 95px;
+    				height: auto;
+    				min-height: 95px;
     				width: 100%;
     				margin: 0 auto;
     				border-bottom: 1px solid #232a3a;
+						@include breakpoint(medium down) {
+							height: auto;
+						}    				
 	    				 .projection-title {
 	    				 	float: left;
 	    				 	padding: 20px 0px 0px 30px;
@@ -92,18 +102,39 @@
 
     			}
     			.projects-left-bar {
-    				height: 600px;
-    				width: 85%;
-    				padding-left: 70px;
+    				height: 530px;
+    				width: 80%;
+    				padding-left: 3%;
     				padding-top: 40px;
     				float: left;
     				overflow: scroll;
-
+    					@include breakpoint(medium only) {
+    						width: 75%;
+						}      				
+    					@include breakpoint(small only) {
+							width: 100%;
+							padding-left: 0;
+						}   
 		    				.project {
 		    					width: 270px;
 		    					height: auto;
-		    					float: left;
+		    					min-height: 460px;
+		    					display: inline-block;
+		    					margin: 0 auto;
 		    					margin-bottom: 40px;
+			    					@include breakpoint(medium only) {
+			    						margin: 0 auto;
+			    						display: block;
+			    						margin-bottom: 40px;
+									} 		    					
+			    					@include breakpoint(small only) {
+										float: none;
+										display: block;
+										margin: 0 auto;
+										margin-bottom: 40px;
+										width: 95%
+
+									}   		    					
 		    					 .project-cover {
 		    					 	width: 212px;
 		    					 	height: 320px;
@@ -126,6 +157,8 @@
 		    							color: $white;
 		    						}	
 		    						.project-ctags {
+		    							height: auto;
+		    							min-height: 20px;
 		    							margin-top: 10px;
 		    							.tag-type-1 {
 		    								float: left;
@@ -165,9 +198,11 @@
 		    						}
 			    					.project-choice {
 			    						width: 212px;
-			    						margin: 0 auto;		    						
+			    						margin: 0 auto;	
+			    						height: auto;  
+			    						min-height: 40px; 	
+			    						margin-top: 12px; 					
 				    						.choice-button {
-				    							margin-top: 12px; 
 				    							width: 160px;
 				    							height: 40px;
 				    							text-transform: uppercase;
@@ -189,10 +224,52 @@
 		    				}
     			}         			
     			.project-right-bar {
-    				width: 15%;
+    				width: 20%;
+    				min-width: auto;
     				height: 600px;
-    				min-height: 400px;
+    				min-height: auto;
     				float: right;
+    				padding-top: 100px;
+    					@include breakpoint(medium only) {
+    						height: auto;
+    						width: 25%;
+						}       				
+    					@include breakpoint(small only) {
+    						padding: 30px 0 30px 0;
+							float: left;
+							width: 100%;
+							height: auto;
+
+						}   
+    					.title-tags-list {
+    						width: auto;
+    						height: auto;
+    						font-size: 12px;
+    						color: $dark-gray;
+    						line-height: 1.1em;
+    						margin-left: 20px;
+		    					@include breakpoint(medium only) {
+		    						width: 100%;
+		    						margin: 0 auto;
+		    						margin-left: 5px;
+								}       						
+		    					@include breakpoint(small only) {
+		    						width: 40%;
+		    						margin: 0 auto;
+		    						
+								}      						
+	    					    	.dynamic-tt:before {
+	    								width: auto;
+	    								height: auto;
+	    								padding: 0;
+	    								text-align: left;
+	    								content: "x\00a0";
+
+	    							}
+
+
+    					}
+
 
     				
     			}  
